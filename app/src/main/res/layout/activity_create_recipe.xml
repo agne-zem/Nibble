@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CreateRecipeActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextCreateRecipe"
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:text="Create a recipe"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextCreateRecipe"
+                android:text="What will you call your recipe?"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewIngredientsText"
+                android:hint="chocolate chip cookies"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewIngredientsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTitleText"
+                android:text="What are the ingedients and amounts?"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/editTextIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="241dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Milk: two glasses;                                                                                                Butter: 300g"
+                android:inputType="textMultiLine"
+                android:textSize="14sp"
+                android:scrollbars="vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal"/>
+
+            <android.support.design.chip.ChipGroup
+                android:id="@+id/chipGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textDescriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How can we make your recipe?"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/textDescription"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="First we chop two onions... "
+                android:inputType="textMultiLine"
+                android:outlineProvider="none"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="14sp"
+                android:scrollbars="vertical"/>
+
+            <TextView
+                android:id="@+id/textPhotoText"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:text="Can you share a photo of your recipe?"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+
+            <Button
+                android:id="@+id/buttonPickPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Pick a photo from gallery"
+                android:textColor="#fff" />
+
+            <ImageView
+                android:id="@+id/imageViewRecipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@drawable/images" />
+
+
+            <Button
+                android:id="@+id/uploadPhoto2"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:background="@color/colorAccent"
+                android:text="Upload photo" />
+
+            <ProgressBar
+                android:id="@+id/progress_circle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/buttonUpload"
+                android:layout_width="match_parent"
+                android:textColor="#fff"
+                android:background="@color/colorAccent"
+                android:layout_height="wrap_content"
+                android:text="Upload recipe" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

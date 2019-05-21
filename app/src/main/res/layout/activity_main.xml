@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="233dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Welcome back to Cooking Master!
+        Ready to make something tasty?"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center_horizontal"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_gravity="center_horizontal"
+        android:hint="Password" />
+
+    <Button
+        android:id="@+id/log_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@color/colorAccent"
+        android:text="Log in"
+        android:textColor="#fff"
+        android:onClick="logInButton"/>
+
+    <TextView
+        android:id="@+id/textViewSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="No account yet? Click here to sign in"
+        android:textAlignment="center"
+        android:onClick="signInTextView"/>
+
+</LinearLayout>

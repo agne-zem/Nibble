@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "715813593809",
+    "firebase_url": "https://nibble-30048.firebaseio.com",
+    "project_id": "nibble-30048",
+    "storage_bucket": "nibble-30048.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715813593809:android:b1954ef50c09acd6",
+        "android_client_info": {
+          "package_name": "com.programele.nibble"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715813593809-1otejhoemnh380eiugour5i34tk8oafv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH3IM132e7qT8DO_7Kv3gLXS8hl5Xlvik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715813593809-1otejhoemnh380eiugour5i34tk8oafv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
